@@ -1,0 +1,61 @@
+.zhuyao{
+	padding:10px;
+	background:#fff;
+	border:1px #d1d1d1 solid;
+	position:relative;
+	min-height:420px;
+	_height:420px;
+}
+.pic-l{
+	width:400px;
+	position:absolute;
+	left:10px;
+}
+/******************pic 多图展示************************/
+#preview{width:400px;}
+.jqzoom{ width:400px; height:360px; position:relative; padding:10px 0px; border:1px #ccc solid; text-align:center; background:#FFF;}
+
+.zoomdiv{ left:410px!important; top:0px!important; height:400px; width:400px;}
+.list-h li{ float:left; display:inline;}
+#spec-n5{width:400px; height:56px; padding-top:6px; overflow:hidden;}
+#spec-left{ background:url(../../images/admin/left.gif) no-repeat; width:10px; height:45px; float:left; cursor:pointer; margin-top:5px;}
+#spec-right{background:url(../../images/admin/right.gif) no-repeat; width:10px; height:45px; float:right;cursor:pointer; margin-top:5px;}
+#spec-list{ width:390px; float:left; overflow:hidden; margin-left:2px; display:inline;}
+#spec-list ul li{ float:left; margin-right:0px; display:inline; width:62px;}
+#spec-list ul li img{ padding:2px ; border:1px solid #ccc; width:50px; height:50px;}
+
+.jqzoom{position:relative;padding:0;}
+.zoomdiv{z-index:100;position:absolute;top:1px;left:0px;width:400px;height:400px;background:url(i/loading.gif) #fff no-repeat center center;border:1px solid #e4e4e4;display:none;text-align:center;overflow: hidden;}
+.bigimg{width:800px;height:800px;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:50px;height:50px;border:1px solid #aaa;background:#FEDE4F 50% top no-repeat;opacity:0.5;-moz-opacity:0.5;-khtml-opacity:0.5;filter:alpha(Opacity=50);cursor:move;}
+#spec-list{ position:relative;width:370px;margin-left:6px; overflow:hidden;}
+#spec-list div{margin-top:0;margin-left:-30px;*margin-left:0;}
+/****************************产品图展示结束***********************************/
+
+
+.picRightList {margin-left:412px;}
+.picRightList h1 {height:40px; background:url(../../images/admin/common/dot1.gif) left bottom repeat-x;line-height:20px;}
+.picRightList h1 span {background:url(../../images/admin/common/btn_green.gif) left top no-repeat; width:81px; height:24px; float:right; text-align:center; line-height:24px; color:#fff; display:inline; margin-right:12px; cursor:pointer;}
+.picRightList ul { width:100%;}
+.picRightList ul li {height:28px; line-height:28px; background:url(../../images/admin/common/dot_red.gif) left 13px no-repeat; padding-left:12px; border-bottom:1px dotted #e1e1e1;}
+.picRightList ul li#re {position:relative;}
+.picRightList ul li.current .memberLevelPo { display:block;}
+.picRightList ul li .memberLevelPo {position:absolute; width:auto; border:1px solid #c6deff; background-color:#f2f7ff; padding:12px; line-height:20px; top:28px; left:72px; display:none;}
+
+.memberLevelPo span {color:#cc0000;}
+.memberLevelPo .arrowupBox{position:relative;height:0; float:left; display:inline;}
+.memberLevelPo .arrowupBox .arrowupBoxAbs { float:left;position:absolute; background:url(../../images/admin/arrow_member.gif) left top no-repeat; width:12px; height:8px; top:-20px;}
+.picRightList ul li .number {float:right; margin-right:12px; display:inline;}
+.picRightList ul li i ,.picRightList ul li .starJsbox{ float:left; display:inline; font-style:normal;}
+.starJsbox {height:13px; overflow:hidden; width:65px; margin-top:8px;background:url(../../images/admin/star.gif) left top repeat-x;}
+.starJsbox div.starComments {background:url(../../images/admin/star.gif) left -14px;}
+.starJsbox div {background:url(../../images/admin/star.gif) left top repeat-x;height:13px; float:left; width:13px;}
+.yellowMention {border:1px solid #ffc798; background-color:#fdfae9; padding:12px; margin:17px 0;}
+.yellowMention table {margin-bottom:0;}
+.yellowMention table tr td {} 
+.yellowMention span {float:left; display:inline; line-height:24px; margin-right:4px;}
+.yellowMention span input { margin:5px 3px 0 0;_margin:0;*margin:0px;}
+#minusA,#plusA{margin-top:8px;*margin-top:5px;_margin-top:5px;background-image:url(../../images/admin/common/addminus.gif); background-repeat:no-repeat; width:13px; height:13px; overflow:hidden; cursor:pointer;}
+#minusA {background-position:left top;}
+#plusA {background-position:left -14px;}
+.countA { border:1px solid #7f9db9; width:30px; height:18px; line-height:18px;}

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Mpahome.Domain.Entities.Blog>
+
+@{
+    ViewBag.Title = "Blogs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var p in Model) {
+<div class="item">
+        <h3>@p.Title</h3>
+        @p.Description
+        <h4>@p.AddDate</h4>
+</div>
+}

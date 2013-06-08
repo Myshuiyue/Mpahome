@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>上海交大国院校友会管理中心</title>
+    <meta name="description" content="." />
+    <meta name="keywords" content="." />
+    <link href="@Url.Content("~/Content/Admin/style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Admin/visualize.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Admin/date_input.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Admin/jquery.minicolors.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Admin/jquery.wysiwyg.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Admin/jquery.fancybox.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Admin/tipsy.css")" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+    <link href="/Content/Admin/ie.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery-1.7.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery-ui.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/excanvas.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery.visualize.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery.tablesorter.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery.date_input.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery.minicolors.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery.wysiwyg.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery.fancybox.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/jquery.tipsy.js")"></script>
+    <script type="text/javascript">
+//        $(function () {
+//            var keylist = ["news", "manages", "job", "banner", "link", ];
+//            var url = window.location.href;
+//            for (var i = 0; i < keylist.length; i++) {
+//                if (url.toLowerCase().indexOf(keylist[i]) != -1) {
+//                    $("#menu_" + keylist[i]).removeClass();
+//                    $("#menu_" + keylist[i]).next("ul").show();
+//                }
+//            }
+//        });
+    </script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/custom.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Admin/common.js")"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>
+            <a href="/admin">上海交大国院校友会管理中心</a></h1>
+        <div class="userprofile" style="width: 75px;">
+            <ul>
+                <li><a href="javascript:void(0);">
+                    <img src="@Url.Content("~/images/admin/avatar.gif")" alt="" />
+                    用户</a>
+                    <ul>
+                        <li><a href="@Url.Content("/Admin/Home/EditPassword")">密码修改</a></li>
+                        <li><a href="@Url.Content("/Admin/Login/Logout")">用户注销</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- .userprofile ends -->
+    </div>
+    <!-- #header ends -->
+    <div id="sidebar">
+        <ul id="nav">
+            <li><a href="@Url.Content("~/")" target="_blank"><strong>
+                <img src="@Url.Content("~/images/admin/nav/dashboard.png")" alt="" />
+                查看网站</strong></a></li>
+            <li><a href="#" class="collapse" id="menu_news">
+                <img src="@Url.Content("~/images/admin/nav/pages.png")" alt="" />
+                新闻中心</a>
+                <ul>
+                    <li><a href="@Url.Content("/Admin/News")">新闻管理</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="collapse" id="menu_job">
+                <img src="@Url.Content("~/images/admin/nav/support.png")" alt="" />
+                招聘中心</a>
+                <ul>
+                    <li><a href="@Url.Content("/Admin/Job")">招聘管理</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="collapse" id="menu_link">
+                <img src="@Url.Content("~/images/admin/nav/users.png")" alt="" />
+                友情链接</a>
+                <ul>
+                    <li><a href="@Url.Content("/Admin/Link")">链接管理</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="collapse" id="menu_banner">
+                <img src="@Url.Content("~/images/admin/nav/pages.png")" alt="" />
+                Banner管理</a>
+                <ul>
+                    <li><a href="@Url.Content("/Admin/Banner")">Banner设置</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="collapse" id="menu_manages">
+                <img src="@Url.Content("~/images/admin/nav/users.png")" alt="" />
+                系统管理</a>
+                <ul>
+                    <li><a href="@Url.Content("/Admin/Manages")">用户管理</a></li>
+                    <li><a href="@Url.Content("/Admin/Manages/RolesList")">角色管理</a></li>
+                    <li><a href="@Url.Content("/Admin/Manages/PurviewList")">权限管理</a></li>
+                    <li><a href="@Url.Content("/Admin/Manages/PagesList")">页面管理</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="status_box">
+            <ul>
+                <li><a href="#" class="online" title="Online">数据库系统</a></li>
+                <li><a href="#" class="online" title="Online">邮件系统</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- #sidebar ends -->
+    @RenderBody()
+</body>
+</html>

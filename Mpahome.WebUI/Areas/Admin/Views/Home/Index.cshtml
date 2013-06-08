@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div id="content">
+    <div class="breadcrumb">
+        <a href="@Url.Content("/Admin/Home")">管理中心</a> &raquo; 首页
+    </div>
+    <!-- .breadcrumb ends -->
+    <h2>
+        欢迎来到上海交大国院校友会管理中心</h2>
+    <div class="textbox">
+        <div class="textbox_content">
+            @User.Identity.Name，欢迎您登录上海交大国院校友会管理系统！<br />
+            您上次登陆的时间：
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>

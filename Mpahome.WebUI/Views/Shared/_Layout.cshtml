@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>上海交大国务学院校友会</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Content/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div class="static-background">
+        <img alt="" src="/upload/bg-static.jpg">
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Header -->
+            <header class="three column">
+                <div class="inner-header">
+                    <div id="logo">
+                        <div>
+                            <a href="index.html">
+                                <img alt="" src="/images/logo.png"></a>
+                        </div>
+                    </div>
+                    <section class="menu">
+                        <nav>
+                            <ul>
+                                <li class="active"><a href="/">首页</a></li>
+                                <li><a href="blog.html">新闻</a></li>
+                                <li class="drop"><a href="#">校友会</a>
+                                    <span></span>
+                                    <ul class="dropdown">
+                                        <li><a href="single-post.html">会长致词</a></li>
+                                        <li><a href="single-work.html">组织章程</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="portfolio.html">人物</a></li>
+                                <li><a href="shortcodes.html">活动</a></li>
+                                <li><a href="contact.html">关于我们</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="header-end">
+                        <form action="http://www.examples.com/" method="get">
+                            <div id="search-bar" class="clearfix">
+                                <input type="text" name="s" placeholder="搜索" value="">
+                                <input type="submit" value="">
+                            </div>
+                        </form>
+                        <ul id="social-icons" class="clearfix">
+                            <!-- Social Icons -->
+                            <li><a href="#">
+                                <img alt="" src="/images/fb.png"></a></li>
+                            <li><a href="#">
+                                <img alt="" src="/images/gogle.png"></a></li>
+                            <li><a href="#">
+                                <img alt="" src="/images/rss.png"></a></li>
+                            <li><a href="#">
+                                <img alt="" src="/images/twi.png"></a></li>
+                        </ul>
+                    </section>
+                </div>
+            </header>
+            <!-- End Header -->
+            <!-- Content -->
+            <div id="content" class="nine column">
+                @RenderBody()
+                <footer class="row">
+
+                    <div class="four column twitter-widget">
+                        <div class="back-title">
+                            <h2>校友墙</h2>
+                        </div>
+                        <div class="flicker-images">
+                            <a href="#">
+                                <img alt="" src="upload/twit-widget1.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="" src="upload/twit-widget2.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="" src="upload/twit-widget3.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="" src="upload/twit-widget4.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="" src="upload/twit-widget5.jpg">
+                            </a>
+                            <a href="#">
+                                <img alt="" src="upload/twit-widget6.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="four column twiter">
+                        <div class="back-title">
+                            <h2>最新留言</h2>
+                        </div>
+                        <div>
+                            <p>
+                                <img alt="" src="/images/twiter.png">
+                                祝愿国院越办越好越办越好 <a href="#">jimmy Zheng</a><br>
+                                <span>10小时以前 </span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <img alt="" src="/images/twiter.png">
+                                祝愿国院越办越好越办越好 <a href="#">jimmy Zheng</a><br>
+                                <span>11小时以前 </span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <img alt="" src="/images/twiter.png">
+                                祝愿国院越办越好越办越好 <a href="#">jimmy Zheng</a><br>
+                                <span>11小时以前 </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="four column contact-info">
+                        <div class="back-title">
+                            <h2>联系我们</h2>
+                        </div>
+                        <p>
+                            <img alt="" src="/images/phone.png"><span>86 021 5080 8198</span></p>
+                        <p>
+                            <img alt="" src="/images/mail.png"><span><a href="#">info@mpahome.net</a></span></p>
+                        <p>
+                            <img alt="" src="/images/print.png"><span>+86 136 5194 6005</span></p>
+                        <p>
+                            <img alt="" src="/images/addres.png"><span>上海市徐汇区华山路209号</span>
+                        </p>
+                    </div>
+
+                    <article class="end-footer twelve column">
+                        <p>© Copyright 2013 上海交通大学国务学院校友会</p>
+                    </article>
+
+                </footer>
+            </div>
+            <!-- End content -->
+        </div>
+    </div>
+    <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
